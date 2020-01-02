@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Startup-station</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- stylesheet.cssの読み込み -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<!-- bootstrap sampleページ -->
+
+<body>
+    <header>
+        <div class="bg-dark collapse show" id="navbarHeader">
+            <!-- <div class="container"> -->
+            <div class="row container2">
+                <!-- col-sm-8 col-md-7 py-4 -->
+                <div class=" logo-wid">
+                    <h4 class="text-white">Startup-Station</h4>
+                    <!-- <p class="text-muted">動画一覧</p> -->
+                </div>
+                <div class="div_ul">
+                    <ul class="ul_menu">
+                        <li class="li_menu">
+                            <!-- <p><a href=""><img class="img_width" src="img/01membersip_w.png" alt="membership"></a></p> -->
+                            <p><a class="img_width" href="">membersip</a></p>
+                        </li>
+                        <li class="li_menu">
+                            <!-- <p><a href=""><img class="img_width" src="img/02コメント_w.png" alt="comment"></a></p> -->
+                            <p><a class="img_width" href="">コメント</a></p>
+                        </li>
+                        <li class="li_menu">
+                            <!-- <p><a href=""><img class="img_width" src="img/03メッセージ_w.png" alt="message"></a></p> -->
+                            <p><a class="img_width" href="">メッセージ</a></p>
+                        </li>
+                        <li class="li_menu">
+                            <!-- <p><a href=""><img class="img_width" src="img/05通知リスト_w.png" alt="通知"></a></p> -->
+                            <p><a class="img_width" href="">通知</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- col-sm-4 offset-md-1 py-4 -->
+                <div class="contact">
+                    <h4 class="text-white">Contact</h4>
+                    <ul class="list-unstyled">
+                        <!-- <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li> -->
+                        <li><a href="#" class="email_us">Email us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mr-2">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                        </path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <strong>Movie List</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div> -->
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center" style="padding: 0px 32px;">
+            <div class="container">
+                <h1 class="jumbotron-heading,my-lg-0">新着動画一覧</h1>
+                <!-- <p class="lead text-muted">Something short and leading about the collection below—its contents, the
+                    creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it
+                    entirely.</p> -->
+                <p>
+                    <!--データベースから取得したデータをasc順に掲載する -->
+                    <a href="#" class="btn btn-primary my-2">新着順</a>
+                    <a href="#" class="btn btn-secondary my-2">急上昇順</a>
+                </p>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <iframe class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                                src="https://www.youtube.com/embed/q5clO47zeT0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title">㈱Shimizu鮮魚</h4>
+                                <p class="card-text">最高の仕立て魚を扱う店を知るツールを</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""><button type="button"
+                                                class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <iframe class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                                src="https://www.youtube.com/embed/n7RhAmpehOw"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title">ぎょーむ効率課</h4>
+                                <p class="card-text">行政のアナログな事務を効率化</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <iframe class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                                src="https://www.youtube.com/embed/ABcoZX9rcfo"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title">shimisuzu薬品㈱</h4>
+                                <p class="card-text">化学反応経路の自動探索</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <p><a href="https://www.youtube.com/embed/q5clO47zeT0"><img class="samune"
+                                        src="img/samune4.png" alt="チョウザメの究極の血抜き"></a></p>
+                            <div class="card-body">
+                                <h4 class="card-title">another title</h4>
+                                <p class="card-text">another style</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="https://www.youtube.com/embed/q5clO47zeT0"><button type="button"
+                                                class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <iframe class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                                src="https://www.youtube.com/embed/q5clO47zeT0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title">another title</h4>
+                                <p class="card-text">another style</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <iframe class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                                src="https://www.youtube.com/embed/q5clO47zeT0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title">another title</h4>
+                                <p class="card-text">another style</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <iframe class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                                src="https://www.youtube.com/embed/q5clO47zeT0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title">another title</h4>
+                                <p class="card-text">another style</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""></a><button type="button"
+                                            class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <iframe class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                                src="https://www.youtube.com/embed/q5clO47zeT0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                            <div class="card-body">
+                                <h4 class="card-title">another title</h4>
+                                <p class="card-text">another style</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href=""> <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <iframe class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                                src="https://www.youtube.com/embed/q5clO47zeT0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen="">
+                            </iframe>
+                            <h4 class="card-title">another title</h4>
+                            <p class="card-text">another style</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href=""><button type="button"
+                                            class="btn btn-sm btn-outline-secondary">視聴</button></a>
+                                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">トップに戻る</a>
+            </p>
+            <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a
+                    href="../../getting-started/">getting started guide</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="467" height="225" viewBox="0 0 467 225" preserveAspectRatio="none"
+        style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+        <defs>
+            <style type="text/css"></style>
+        </defs><text x="0" y="23"
+            style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text>
+    </svg>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div>
+    <div class="header">
+      <div class="logo">Logo</div>
+      <div class="menu">
+        <div class="menu1"><a href="">動画一覧</a></div>
+        <div class="menu1"><a href="">登録起業家</a></div>
+        <div class="menu1"><a href="">通知</a></div>
+        <div class="menu1"><a href="">メッセージ</a></div>
+      </div>
+
+    </div>
+    <div class="main">
+      <!-- absolute -->
+      <div class="kao">
+        <!-- relative -->
+        <div class="kao1">
+          <img src="img/footer.png" alt="" width="200px" height=""></div>
+        <div class="kao2">
+          <!-- <table>
+            <tr>
+              <th class="th2">投資家情報</th>
+              <td class="th2">ミスゞ運送㈱</td>
+            </tr>
+            <tr>
+              <th class="th1">経歴</th>
+              <td class="th2">運送屋の愛娘。高校卒業後に運送業に就職し天命を尽くした</td>
+            </tr>
+            <tr>
+              <th class="th1">サイトURL</th>
+              <td class="th2"><a href="http://cras-c.com/#profile">Cras Consulting 株式会社</a></td>
+            </tr>
+          </table> -->
+
+          <ul>
+            <li>
+              <p>投資家情報</p>
+              <input type="text" placeholder="ここにテキストが入ります">
+            </li>
+            <li>
+              <p>経歴</p>
+              <input type="text" placeholder="ここにテキストが入ります">
+            </li>
+            <li>
+              <p>サイトURL</p>
+              <input type="text" placeholder="ここにテキストが入ります">
+            </li>
+          </ul>
+          <div class="div_menu_btn1">
+            <a href="#" class="menu_btn1">変更する</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  $(document).ready(function () {
+
+    $('.first-button').on('click', function () {
+      $('.animated-icon1').toggleClass('open');
+    });
+    $('.second-button').on('click', function () {
+      $('.animated-icon2').toggleClass('open');
+    });
+    $('.third-button').on('click', function () {
+      $('.animated-icon3').toggleClass('open');
+    });
+  });
+</script>
+
+</html>
